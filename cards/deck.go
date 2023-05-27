@@ -20,9 +20,8 @@ func newDeck() deck {
 	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
 
 	for _, suit := range cardSuits {
-		for _, values := range cardValues {
-			deckCard := values + " of " + suit
-			cards = append(cards, deckCard)
+		for _, value := range cardValues {
+			cards = append(cards, value+" of "+suit)
 		}
 	}
 	return cards
